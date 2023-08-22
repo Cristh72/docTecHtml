@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documentación técnica</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML y CSS</header>
+        <ul>
+            <li> <a href="#Introducción" class="nav-link">Introducción</a></li>
+            <li> <a href="#HTML:_El_Esqueleto_de_la_Web" class="nav-link">HTML</a></li>
+            <li> <a href="#CSS:_Estilizando_la_Web" class="nav-link">CSS</a></li>
+            <li> <a href="#Separación_de_Responsabilidades" class="nav-link">Separación de Responsabilidades</a></li>
+            <li> <a href="#Responsive_Design" class="nav-link">Responsive Design</a></li>
+            <li> <a href="#Frameworks_y_Bibliotecas" class="nav-link">Frameworks y Bibliotecas</a></li>
+            <li> <a href="#Conclusión" class="nav-link">Conclusión</a></li>
+            <li> <a href="#Referencia" class="nav-link">Referencia</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <article>
+                <p>
+                    HTML (HyperText Markup Language) y CSS (Cascading Style Sheets) son dos tecnologías fundamentales para la creación de sitios web. HTML se utiliza para estructurar el contenido y definir su significado, mientras que CSS se encarga de dar estilo y presentación a ese contenido. Juntos, forman la base de la mayoría de las páginas web modernas.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="HTML:_El_Esqueleto_de_la_Web">
+            <header>HTML: El Esqueleto de la Web</header>
+            <article>
+                <p>HTML (HyperText Markup Language) es el lenguaje utilizado para estructurar el contenido de una página web. Utiliza etiquetas (tags) para marcar elementos y definir su significado.</p>
+                <p>Un ejemplo simple de HTML sería la siguiente estructura básica de una página web:</p>
+                <code>
+                    "&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                        &lt;title&gt;Mi ejemplo&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;¡Bienvenido!&lt;/h1&gt;<br>
+                        &lt;p&gt;Esto es ejemplo.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>"
+                </code>
+                <p>Explicación de este ejemplo:</p>
+                <ul>
+                    <li> Las etiquetas &lt;html&gt;, &lt;head&gt;, y &lt;body&gt; definen la estructura de la página.</li>
+                    <li> Las etiquetas &lt;h1&gt; y &lt;p&gt; son etiquetas que marcan un encabezado y un párrafo, respectivamente, y agregan significado al contenido.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="CSS:_Estilizando_la_Web">
+            <header>CSS: Estilizando la Web</header>
+            <article>
+                <p> CSS (Cascading Style Sheets) es un lenguaje de estilo que se utiliza para controlar la apariencia y el diseño de una página web. Permite definir propiedades como colores, fuentes y márgenes.</p>
+                <p> Aquí hay un ejemplo de CSS que cambia el color del texto y el fondo de un párrafo:</p>
+                <code>
+                    "p { color: blue; background-color: lightgray;}"
+                </code>
+                <p>Explicación de este ejemplo:</p>
+                <ul>
+                    <li> El selector p se utiliza para seleccionar todos los elementos de párrafo en la página.</li>
+                    <li> Las propiedades "color" y "background-color" se usan para darles un color al texto y un color de fondo a los elementos p respectivamente.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Separación_de_Responsabilidades">
+            <header>Separación de Responsabilidades</header>
+            <article>
+                <p>La separación de responsabilidades en desarrollo web significa mantener HTML y CSS en archivos separados para facilitar la administración y el mantenimiento del código.</p>
+                <p>En lugar de incluir estilos directamente en el HTML, se utiliza un archivo CSS externo vinculado al documento HTML:</p>
+                <code>"&lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;"</code>
+                <p>Explicación:</p>
+                <ul>
+                    <li> El elemento "link" enlaza nuestra estructura HTML con nuestra hoja de estilos CSS.</li>
+                    <li> El archivo estilos.css contiene todas las reglas de estilo, lo que hace que el código sea más organizado y mantenible.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <article>
+                <p>Responsive Design se refiere a la capacidad de una página web para adaptarse a diferentes tamaños de pantalla y dispositivos. CSS es esencial para lograr esto.</p>
+                <p>Usando una consulta @media, puedes ajustar el diseño para pantallas pequeñas, como teléfonos móviles:</p>
+                <code>"@media (max-width: 600px) { body { font-size: 14px;  }}"</code>
+                <p>En este ejemplo, cuando el ancho de la pantalla es igual o menor a 600px, el tamaño de fuente se reduce a 14px para mejorar la legibilidad en dispositivos móviles.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Frameworks_y_Bibliotecas">
+            <header>Frameworks y Bibliotecas</header>
+            <article>
+                <p>Son herramientas que permiten a los desarrolladores web aprovechar soluciones probadas y preestablecidas para crear sitios web de manera más rápida y consistente, sin tener que escribir todo el código desde cero.</p>
+                <p> Frameworks y bibliotecas CSS como Bootstrap y Foundation proporcionan componentes predefinidos y estilos para agilizar el desarrollo web.</p>
+                <p>Bootstrap es un framework CSS ampliamente utilizado que ofrece botones, formularios, barras de navegación y otros componentes listos para usar en tu sitio web:</p>
+                <code>"&lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                        &lt;meta charset="UTF-8"&gt;<br>
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                        &lt;title&gt;Ejemplo Bootstrap&lt;/title&gt;<br>
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;div class="container"&gt;<br>
+                            &lt;h1&gt;Ejemplo de Bootstrap&lt;/h1&gt;<br>
+                            &lt;p&gt;Este es un bot&oacute;n de Bootstrap:&lt;/p&gt;<br>
+                            &lt;button class="btn btn-primary"&gt;Haz clic aqu&iacute;&lt;/button&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>"
+                </code>
+                    <p>En este ejemplo:</p>
+                    <ul>
+                        <li> Estamos incluyendo Bootstrap 4 en el encabezado (head) del documento HTML mediante un enlace (link) al archivo CSS de Bootstrap desde un CDN (Content Delivery Network).</li>
+                        <li>Hemos creado un botón utilizando las clases de Bootstrap. La clase btn se utiliza para estilizar el botón, y btn-primary establece el color de fondo del botón como azul, que es el estilo de botón primario de Bootstrap.</li>
+                        <li>Al final del documento, hemos incluido el archivo JavaScript de Bootstrap desde el mismo CDN. Esto es opcional y se utiliza si planeas utilizar componentes interactivos de Bootstrap que requieren JavaScript.</li>
+                    </ul>
+                    "Cuando abras este archivo HTML en un navegador, verás un botón estilizado de Bootstrap. Puedes personalizar aún más el aspecto y la funcionalidad de tus elementos utilizando las clases y componentes proporcionados por Bootstrap.".
+            </article>
+        </section>
+        <section class="main-section" id="Conclusión">
+            <header>Conclusión</header>
+            <p>HTML y CSS son los lenguajes fundamentales para crear páginas web. HTML estructura el contenido, mientras que CSS controla el diseño y la apariencia. La separación de responsabilidades, el diseño receptivo y el uso de frameworks facilitan el desarrollo de sitios web efectivos y atractivos.</p>
+        </section>
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <p>Puedes encontrar más información en la pagina de <a href=" https://developer.mozilla.org/" target="_blank">Mozilla Developer Network (MDN)</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
