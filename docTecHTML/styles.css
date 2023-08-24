@@ -110,7 +110,7 @@ code{
     }
 
     #navbar ul{
-        border-top: 2px solid #500e0e;
+        border-bottom: 2px solid #500e0e;
         height: 200px;
         overflow-y:auto;
         margin:0;
@@ -123,8 +123,22 @@ code{
         padding: 40px;
         margin-bottom: 90px;   
     }
+}
 
-
+@media only screen and (max-width: 400px) {
+    #main-doc{
+        word-break:normal;
+        margin-left:-10px;
+        
+    }
+    code {
+    margin-left:-10px;
+    width: 100%;
+    word-wrap: normal;
+    word-break: normal;
+    padding: -px;
+    min-width: 300px;
+    }
 }
 
 
